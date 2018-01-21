@@ -13,6 +13,7 @@ public class BasketTest {
     private Item milk;
     private IDiscount bogof;
     private IDiscount tenPercentOff;
+    private IDiscount loyaltyCard;
 
     @Before
     public void before() {
@@ -21,6 +22,7 @@ public class BasketTest {
         milk = new Milk("Milk", 0.80);
         bogof = new BogofDiscount(milk);
         tenPercentOff = new TenPercentOffDiscount();
+        loyaltyCard = new LoyaltyCardDiscount();
     }
 
     @Test
@@ -128,5 +130,21 @@ public class BasketTest {
     @Test
     public void canGetLoyaltyCard() {
         assertEquals(false, basket.hasLoyaltyCard());
+    }
+
+    @Test
+    public void canAddLoyaltyCard() {
+        basket.addLoyaltyCard();
+        assertEquals(true, basket.hasLoyaltyCard());
+    }
+
+    @Test
+    public void canGetTotalDiscountWithLoyaltycard() {
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+        basket.addLoyaltyCard();
+        basket.addDiscount(loyaltyCard);
+        assertEquals(0.16, basket.getTotalOfDiscount(), 0.01);
+        assertEquals(7.89, basket.getTotal(), 0.01);
     }
 }

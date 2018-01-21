@@ -1,6 +1,6 @@
 package basket;
 
-import discount.IDiscount;
+import discount.*;
 
 import java.util.ArrayList;
 
@@ -64,13 +64,17 @@ public class Basket {
 
     public double getTotalOfDiscount(){
         for (IDiscount discount : discounts){
-            double price = discount.applyDiscount(items);
-            setDiscountTotal(price);
+                double price = discount.applyDiscount(items);
+                setDiscountTotal(price);
         }
         return discountTotal;
     }
 
-    public boolean hasLoyaltyCard()? {
+    public boolean hasLoyaltyCard() {
         return loyaltyCard;
+    }
+
+    public void addLoyaltyCard() {
+        loyaltyCard = true;
     }
 }
