@@ -16,6 +16,7 @@ public class BogofDiscount implements IDiscount {
 //        if two items have same name add item to new ArrayList
 //        delete down to half
 //        get all prices and total
+//        What is prices are different? SORT LATER
 
     public ArrayList<Item> createListToApplyDiscount(ArrayList<Item> items) {
         ArrayList<Item> itemsToApplyDiscountTo = new ArrayList<>();
@@ -31,7 +32,7 @@ public class BogofDiscount implements IDiscount {
     public double applyDiscount(ArrayList<Item> items) {
         double finalPrice = 0;
         ArrayList<Item> itemsToCalculate = createListToApplyDiscount(items);
-        int finalNumberOfItems = itemsToCalculate.size() / 2;
+        double finalNumberOfItems = Math.ceil(itemsToCalculate.size() / 2.00);
             double price = items.get(0).getPrice() * finalNumberOfItems;
             finalPrice += price;
         return finalPrice;

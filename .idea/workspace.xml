@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f3c9fff-acef-4567-a5f6-fd1ff14aba71" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java" afterPath="$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BogofTest.java" afterPath="$PROJECT_DIR$/src/test/java/BogofTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,8 +65,8 @@
       <file leaf-file-name="BogofDiscount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+            <state relative-caret-position="186">
+              <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#199#200#0" expanded="true" />
@@ -80,12 +79,12 @@
       <file leaf-file-name="BogofTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BogofTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state relative-caret-position="204">
+              <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1021#1022#0" expanded="true" />
+                <element signature="e#1101#1102#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -419,8 +418,8 @@
         <option value="$PROJECT_DIR$/src/main/java/discount/IDiscount.java" />
         <option value="$PROJECT_DIR$/src/main/java/basket/Basket.java" />
         <option value="$PROJECT_DIR$/src/test/java/BasketTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java" />
         <option value="$PROJECT_DIR$/src/test/java/BogofTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java" />
       </list>
     </option>
   </component>
@@ -625,14 +624,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="BogofTest.canGetItemsToDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BogofTest.canApplyDiscountWithOneItemIsNotRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="ShoppingBasket_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BogofTest" />
-      <option name="METHOD_NAME" value="canGetItemsToDiscount" />
+      <option name="METHOD_NAME" value="canApplyDiscountWithOneItemIsNotRight" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -707,18 +706,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canGetItemsToDiscount" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForTwoItems" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForFourItems" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForThreeItems" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForTwoItems" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForFourItems" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForThreeItems" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountWithOneItemIsNotRight" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForThreeItems" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForFourItems" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForTwoItems" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.canGetItemsToDiscount" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountWithOneItemIsNotRight" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForFourItems" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscountForTwoItems" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BogofTest.canApplyDiscount" />
       </list>
     </recent_temporary>
   </component>
@@ -739,9 +738,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BogofTest_canApplyDiscount - 2018.01.21 at 12h 45m 55s.xml">
-      <configuration name="BogofTest.canApplyDiscount" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BogofTest_canApplyDiscount - 2018.01.21 at 12h 47m 05s.xml">
       <configuration name="BogofTest.canApplyDiscount" configurationId="JUnit" />
     </history-entry>
@@ -757,17 +753,20 @@
     <history-entry file="BogofTest_canApplyDiscountForFourItems - 2018.01.21 at 12h 56m 52s.xml">
       <configuration name="BogofTest.canApplyDiscountForFourItems" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BogofTest_canApplyDiscountForThreeItems - 2018.01.21 at 12h 57m 25s.xml">
+      <configuration name="BogofTest.canApplyDiscountForThreeItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BogofTest_canApplyDiscountForThreeItems - 2018.01.21 at 14h 20m 06s.xml">
+      <configuration name="BogofTest.canApplyDiscountForThreeItems" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BogofTest_canApplyDiscountForThreeItems - 2018.01.21 at 14h 21m 24s.xml">
+      <configuration name="BogofTest.canApplyDiscountForThreeItems" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="BogofTest_canApplyDiscountForTwoItems - 2018.01.21 at 12h 56m 19s.xml">
       <configuration name="BogofTest.canApplyDiscountForTwoItems" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BogofTest_canGetItemsToDiscount - 2018.01.21 at 12h 44m 28s.xml">
-      <configuration name="BogofTest.canGetItemsToDiscount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BogofTest_canGetItemsToDiscount - 2018.01.21 at 12h 44m 52s.xml">
-      <configuration name="BogofTest.canGetItemsToDiscount" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BogofTest_canGetItemsToDiscount - 2018.01.21 at 12h 45m 31s.xml">
-      <configuration name="BogofTest.canGetItemsToDiscount" configurationId="JUnit" />
+    <history-entry file="BogofTest_canApplyDiscountWithOneItemIsNotRight - 2018.01.21 at 14h 13m 58s.xml">
+      <configuration name="BogofTest.canApplyDiscountWithOneItemIsNotRight" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -783,7 +782,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.52288985" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32904884" sideWeight="0.47711015" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904884" sideWeight="0.47711015" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23907454" sideWeight="0.47997138" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -795,7 +794,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16738197" sideWeight="0.5051414" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39974293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -931,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/discount/BogofDiscount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        <state relative-caret-position="186">
+          <caret line="33" column="76" lean-forward="false" selection-start-line="33" selection-start-column="76" selection-end-line="33" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#199#200#0" expanded="true" />
@@ -943,12 +942,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BogofTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="54" column="40" lean-forward="false" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+        <state relative-caret-position="204">
+          <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1021#1022#0" expanded="true" />
+            <element signature="e#1101#1102#0" expanded="true" />
           </folding>
         </state>
       </provider>
