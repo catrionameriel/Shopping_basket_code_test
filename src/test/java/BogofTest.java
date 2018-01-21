@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class BogofTest {
 
@@ -17,7 +18,6 @@ public class BogofTest {
 
     @Before
     public void before() {
-        bogof = new BogofDiscount(butter);
         butter = new Item("Butter", 3.00);
         lettuce = new Item("Lettuce", 1.00);
         lettuce2 = new Item("Lettuce", 1.25);
@@ -27,10 +27,32 @@ public class BogofTest {
         basket2 = new Basket();
         basket2.addItemsToBasket(lettuce);
         basket2.addItemsToBasket(lettuce2);
+        bogof = new BogofDiscount(butter);
     }
 
     @Test
-    public void canApplyDiscount() {
+    public void canGetItemsToDiscount() {
+        assertNotNull(bogof.createListToApplyDiscount(basket.getItems()));
+        assertEquals(2, basket.countItemsInBasket());
+        assertEquals(2, basket.getItems().size());
+        assertEquals(2, bogof.createListToApplyDiscount(basket.getItems()).size());
+    }
+
+    @Test
+    public void canApplyDiscountForTwoItems() {
         assertEquals(3.00, bogof.applyDiscount(basket.getItems()), 0.01);
+    }
+
+    @Test
+    public void canApplyDiscountForFourItems() {
+        basket.addItemsToBasket(butter);
+        basket.addItemsToBasket(butter);
+        assertEquals(6.00, bogof.applyDiscount(basket.getItems()), 0.01);
+    }
+
+    @Test
+    public void canApplyDiscountForThreeItems() {
+        basket.addItemsToBasket(butter);
+        assertEquals(6.00, bogof.applyDiscount(basket.getItems()), 0.01);
     }
 }

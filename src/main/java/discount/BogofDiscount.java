@@ -20,7 +20,7 @@ public class BogofDiscount implements IDiscount {
     public ArrayList<Item> createListToApplyDiscount(ArrayList<Item> items) {
         ArrayList<Item> itemsToApplyDiscountTo = new ArrayList<>();
         for (Item item : items) {
-            if (item == itemToDiscount) {
+            if (item.equals(itemToDiscount)) {
                 itemsToApplyDiscountTo.add(item);
             }
         }
@@ -31,11 +31,9 @@ public class BogofDiscount implements IDiscount {
     public double applyDiscount(ArrayList<Item> items) {
         double finalPrice = 0;
         ArrayList<Item> itemsToCalculate = createListToApplyDiscount(items);
-        int finalNumberOfItems = itemsToCalculate.size() % 2;
-        for (Item item : itemsToCalculate) {
-            double price = item.getPrice() * finalNumberOfItems;
+        int finalNumberOfItems = itemsToCalculate.size() / 2;
+            double price = items.get(0).getPrice() * finalNumberOfItems;
             finalPrice += price;
-        }
         return finalPrice;
     }
 
