@@ -43,4 +43,13 @@ public class Basket {
     public ArrayList<Item> getItems() {
         return items;
     }
+
+
+    public int getNumberOfDiscounts() {
+        return discounts.size();
+    }
+
+    public void addDiscount(IDiscount discount){
+        discounts.add(discount);
+    }
 }
