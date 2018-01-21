@@ -12,6 +12,7 @@ public class BasketTest {
     private Brie brie;
     private Item milk;
     private IDiscount bogof;
+    private IDiscount tenPercentOff;
 
     @Before
     public void before() {
@@ -19,6 +20,7 @@ public class BasketTest {
         brie = new Brie("Brie", 7.25);
         milk = new Milk("Milk", 0.80);
         bogof = new BogofDiscount(milk);
+        tenPercentOff = new TenPercentOffDiscount();
     }
 
     @Test
@@ -98,4 +100,13 @@ public class BasketTest {
         assertEquals(8.05, basket.getTotal(), 0.01);
     }
 
+    @Test
+    public void canGetTotalDiscountWithTenPercent() {
+        basket.addDiscount(tenPercentOff);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        assertEquals(2.17, basket.getTotalOfDiscount(), 0.01);
+
+    }
 }
