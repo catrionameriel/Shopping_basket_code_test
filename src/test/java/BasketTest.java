@@ -109,4 +109,24 @@ public class BasketTest {
         assertEquals(2.17, basket.getTotalOfDiscount(), 0.01);
         assertEquals(19.58, basket.getTotal(), 0.01);
     }
+
+    @Test
+    public void canGetTotalDiscountWithBogofAndTenPercent() {
+        basket.addDiscount(bogof);
+        basket.addDiscount(tenPercentOff);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+//        assertEquals(24.5, basket.getTotalOfDiscount(), 0.01);
+//        assertEquals(19.58, basket.getTotal(), 0.01);
+    }
+
+    @Test
+    public void canGetLoyaltyCard() {
+        assertEquals(false, basket.hasLoyaltyCard());
+    }
 }

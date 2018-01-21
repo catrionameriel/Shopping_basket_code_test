@@ -10,12 +10,14 @@ public class Basket {
     private ArrayList<IDiscount> discounts;
     private double total;
     private double discountTotal;
+    private boolean loyaltyCard;
 
     public Basket(){
         items = new ArrayList<>();
         discounts = new ArrayList<>();
         total = 0;
         discountTotal = 0;
+        loyaltyCard = false;
     }
 
     public int countItemsInBasket() {
@@ -66,5 +68,9 @@ public class Basket {
             setDiscountTotal(price);
         }
         return discountTotal;
+    }
+
+    public boolean hasLoyaltyCard()? {
+        return loyaltyCard;
     }
 }
