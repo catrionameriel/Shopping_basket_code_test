@@ -3,7 +3,10 @@ import basket.Item;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class BasketTest {
 
@@ -62,5 +65,12 @@ public class BasketTest {
         basket.addItemsToBasket(brie);
         basket.addItemsToBasket(milk);
         assertEquals(8.05, basket.getTotal(), 0.01);
+    }
+
+    @Test
+    public void canGetItems() {
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+        assertNotNull(basket.getItems());
     }
 }

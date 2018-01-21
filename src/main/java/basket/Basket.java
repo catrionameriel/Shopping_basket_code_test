@@ -39,4 +39,8 @@ public class Basket {
         }
         return total;
     }
+
+    public ArrayList<Item> getItems() {
+        return items;
+    }
 }
