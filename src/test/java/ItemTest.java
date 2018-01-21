@@ -1,3 +1,4 @@
+import basket.Brie;
 import basket.Item;
 import org.junit.Before;
 import org.junit.Test;
@@ -6,11 +7,11 @@ import static org.junit.Assert.assertEquals;
 
 public class ItemTest {
 
-    private Item brie;
+    private Brie brie;
 
     @Before
     public void before(){
-        brie = new Item("Brie", 5.50);
+        brie = new Brie("Brie", 5.50);
     }
 
     @Test

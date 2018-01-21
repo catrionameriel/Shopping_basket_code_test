@@ -1,5 +1,6 @@
 import basket.Basket;
-import basket.Item;
+import basket.Brie;
+import basket.Milk;
 import discount.BogofDiscount;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,17 +12,17 @@ public class BogofTest {
 
     private BogofDiscount bogof;
     private Basket basket;
-    private Item butter;
-    private Item lettuce;
+    private Brie brie;
+    private Milk milk;
 
     @Before
     public void before() {
-        butter = new Item("Butter", 3.00);
-        lettuce = new Item("Lettuce", 1.00);
+        brie = new Brie("Brie", 3.00);
+        milk = new Milk("Milk", 1.00);
         basket = new Basket();
-        basket.addItemsToBasket(butter);
-        basket.addItemsToBasket(butter);
-        bogof = new BogofDiscount(butter);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
+        bogof = new BogofDiscount(brie);
     }
 
     @Test
@@ -39,21 +40,21 @@ public class BogofTest {
 
     @Test
     public void canApplyDiscountForFourItems() {
-        basket.addItemsToBasket(butter);
-        basket.addItemsToBasket(butter);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(brie);
         assertEquals(6.00, bogof.applyDiscount(basket.getItems()), 0.01);
     }
 
 
     @Test
     public void canApplyDiscountWithOneItemIsNotRight() {
-        basket.addItemsToBasket(lettuce);
+        basket.addItemsToBasket(milk);
         assertEquals(3.00, bogof.applyDiscount(basket.getItems()), 0.01);
     }
 
     @Test
     public void canApplyDiscountForThreeItems() {
-        basket.addItemsToBasket(butter);
+        basket.addItemsToBasket(brie);
         assertEquals(6.00, bogof.applyDiscount(basket.getItems()), 0.01);
     }
 }

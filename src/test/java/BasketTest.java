@@ -1,5 +1,7 @@
 import basket.Basket;
+import basket.Brie;
 import basket.Item;
+import basket.Milk;
 import discount.BogofDiscount;
 import discount.IDiscount;
 import org.junit.Before;
@@ -11,16 +13,16 @@ import static org.junit.Assert.assertNotNull;
 public class BasketTest {
 
     private Basket basket;
-    private Item brie;
+    private Brie brie;
     private Item milk;
     private IDiscount bogof;
 
     @Before
     public void before() {
        basket = new Basket();
-       brie = new Item("Brie", 7.25);
-       milk = new Item("Milk", 0.80);
-       bogof = new BogofDiscount(brie);
+       brie = new Brie("Brie", 7.25);
+       milk = new Milk("Milk", 0.80);
+       bogof = new BogofDiscount(milk);
     }
 
     @Test
@@ -80,5 +82,14 @@ public class BasketTest {
     public void canAddDiscount(){
         basket.addDiscount(bogof);
         assertEquals(1, basket.getNumberOfDiscounts());
+    }
+
+    @Test
+    public void canGetTotalWithBogof() {
+        basket.addDiscount(bogof);
+        basket.addItemsToBasket(milk);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+        assertEquals(0.8, basket.getTotalOfDiscount(), 0.01);
     }
 }

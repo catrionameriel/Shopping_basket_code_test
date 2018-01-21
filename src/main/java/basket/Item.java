@@ -1,6 +1,6 @@
 package basket;
 
-public class Item {
+public abstract class Item {
 
     private String name;
     private double price;

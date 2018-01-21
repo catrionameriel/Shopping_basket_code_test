@@ -9,11 +9,13 @@ public class Basket {
     private ArrayList<Item> items;
     private ArrayList<IDiscount> discounts;
     private double total;
+    private double discountTotal;
 
     public Basket(){
         items = new ArrayList<>();
         discounts = new ArrayList<>();
         total = 0;
+        discountTotal = 0;
     }
 
     public int countItemsInBasket() {
@@ -40,6 +42,10 @@ public class Basket {
         return total;
     }
 
+    private void setDiscountTotal(double newTotal){
+        discountTotal = newTotal;
+    }
+
     public ArrayList<Item> getItems() {
         return items;
     }
@@ -51,5 +57,13 @@ public class Basket {
 
     public void addDiscount(IDiscount discount){
         discounts.add(discount);
+    }
+
+    public double getTotalOfDiscount(){
+        for (IDiscount discount : discounts){
+            double price = discount.applyDiscount(items);
+            setDiscountTotal(price);
+        }
+        return discountTotal;
     }
 }
