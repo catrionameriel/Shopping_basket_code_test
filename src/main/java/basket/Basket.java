@@ -14,11 +14,15 @@ public class Basket {
         discounts = new ArrayList<>();
     }
 
+    public int countItemsInBasket() {
+        return items.size();
+    }
+
     public void addItemsToBasket(Item item){
         items.add(item);
     }
 
-    public int countItemsInBasket() {
-        return items.size();
+    public void deleteItemFromBasket(Item item) {
+        items.remove(item);
     }
 }
