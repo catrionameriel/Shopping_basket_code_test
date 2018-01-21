@@ -56,4 +56,11 @@ public class BasketTest {
     public void totalStartsAtZero() {
         assertEquals(0, basket.getTotal(), 0.01);
     }
+
+    @Test
+    public void totalCanBeCalculatedFromItems() {
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+        assertEquals(8.05, basket.getTotal(), 0.01);
+    }
 }

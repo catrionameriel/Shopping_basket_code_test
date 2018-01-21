@@ -33,6 +33,10 @@ public class Basket {
     }
 
     public double getTotal() {
+        for (Item item : items){
+            double price = item.getPrice();
+            total += price;
+        }
         return total;
     }
 }
