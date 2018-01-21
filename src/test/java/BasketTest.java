@@ -88,4 +88,13 @@ public class BasketTest {
         basket.addItemsToBasket(milk);
         assertEquals(0.8, basket.getTotalOfDiscount(), 0.01);
     }
+
+    @Test
+    public void canGetFinalTotal() {
+        basket.addDiscount(bogof);
+        basket.addItemsToBasket(milk);
+        basket.addItemsToBasket(brie);
+        basket.addItemsToBasket(milk);
+        assertEquals(8.05, basket.getTotal(), 0.01);
+    }
 }

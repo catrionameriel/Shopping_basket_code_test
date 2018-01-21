@@ -39,7 +39,8 @@ public class Basket {
             double price = item.getPrice();
             total += price;
         }
-        return total;
+        getTotalOfDiscount();
+        return total -= discountTotal;
     }
 
     private void setDiscountTotal(double newTotal){
