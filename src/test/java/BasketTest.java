@@ -107,6 +107,6 @@ public class BasketTest {
         basket.addItemsToBasket(brie);
         basket.addItemsToBasket(brie);
         assertEquals(2.17, basket.getTotalOfDiscount(), 0.01);
-
+        assertEquals(19.58, basket.getTotal(), 0.01);
     }
 }

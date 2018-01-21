@@ -55,8 +55,8 @@
       <file leaf-file-name="BasketTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+            <state relative-caret-position="587">
+              <caret line="109" column="26" lean-forward="false" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
@@ -792,8 +792,14 @@
     <history-entry file="BasketTest_canGetFinalTotal - 2018.01.21 at 14h 58m 31s.xml">
       <configuration name="BasketTest.canGetFinalTotal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BasketTest_canGetTotalWithBogof - 2018.01.21 at 14h 49m 30s.xml">
-      <configuration name="BasketTest.canGetTotalWithBogof" configurationId="JUnit" />
+    <history-entry file="BasketTest_canGetTotalDiscountWithTenPercent - 2018.01.21 at 15h 27m 37s.xml">
+      <configuration name="BasketTest.canGetTotalDiscountWithTenPercent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetTotalDiscountWithTenPercent - 2018.01.21 at 15h 29m 05s.xml">
+      <configuration name="BasketTest.canGetTotalDiscountWithTenPercent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BasketTest_canGetTotalDiscountWithTenPercent - 2018.01.21 at 15h 29m 34s.xml">
+      <configuration name="BasketTest.canGetTotalDiscountWithTenPercent" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BasketTest_canGetTotalWithBogof - 2018.01.21 at 14h 55m 17s.xml">
       <configuration name="BasketTest.canGetTotalWithBogof" configurationId="JUnit" />
@@ -803,12 +809,6 @@
     </history-entry>
     <history-entry file="BogofTest_canApplyDiscountForThreeItems - 2018.01.21 at 14h 54m 51s.xml">
       <configuration name="BogofTest.canApplyDiscountForThreeItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BogofTest_cannotApplyDiscountOnWrongItems - 2018.01.21 at 14h 51m 52s.xml">
-      <configuration name="BogofTest.cannotApplyDiscountOnWrongItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BogofTest_cannotApplyDiscountOnWrongItems - 2018.01.21 at 14h 52m 15s.xml">
-      <configuration name="BogofTest.cannotApplyDiscountOnWrongItems" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TenPercentOffTest_canApplyDiscount - 2018.01.21 at 15h 19m 29s.xml">
       <configuration name="TenPercentOffTest.canApplyDiscount" configurationId="JUnit" />
@@ -1035,8 +1035,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BasketTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="108" column="25" lean-forward="false" selection-start-line="108" selection-start-column="25" selection-end-line="108" selection-end-column="25" />
+        <state relative-caret-position="587">
+          <caret line="109" column="26" lean-forward="false" selection-start-line="109" selection-start-column="26" selection-end-line="109" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#647#648#0" expanded="true" />
