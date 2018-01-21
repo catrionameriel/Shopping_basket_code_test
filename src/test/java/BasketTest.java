@@ -1,9 +1,5 @@
-import basket.Basket;
-import basket.Brie;
-import basket.Item;
-import basket.Milk;
-import discount.BogofDiscount;
-import discount.IDiscount;
+import basket.*;
+import discount.*;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -85,7 +81,7 @@ public class BasketTest {
     }
 
     @Test
-    public void canGetTotalWithBogof() {
+    public void canGetTotalDiscountWithBogof() {
         basket.addDiscount(bogof);
         basket.addItemsToBasket(milk);
         basket.addItemsToBasket(brie);

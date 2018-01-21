@@ -30,12 +30,12 @@ public class BogofDiscount implements IDiscount {
 
     @Override
     public double applyDiscount(ArrayList<Item> items) {
-        double finalPrice = 0;
+        double finalPriceToDeduct = 0;
         ArrayList<Item> itemsToCalculate = createListToApplyDiscount(items);
-        double finalNumberOfItems = Math.ceil(itemsToCalculate.size() / 2.00);
-            double price = items.get(0).getPrice() * finalNumberOfItems;
-            finalPrice += price;
-        return finalPrice;
+        double finalNumberOfItems = itemsToCalculate.size() / 2;
+        double price = items.get(0).getPrice() * finalNumberOfItems;
+        finalPriceToDeduct += price;
+        return finalPriceToDeduct;
     }
 
 }

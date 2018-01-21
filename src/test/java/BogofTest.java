@@ -55,6 +55,15 @@ public class BogofTest {
     @Test
     public void canApplyDiscountForThreeItems() {
         basket.addItemsToBasket(brie);
-        assertEquals(6.00, bogof.applyDiscount(basket.getItems()), 0.01);
+        assertEquals(3.00, bogof.applyDiscount(basket.getItems()), 0.01);
+    }
+
+    @Test
+    public void cannotApplyDiscountOnWrongItems() {
+        basket.deleteItemFromBasket(brie);
+        basket.deleteItemFromBasket(brie);
+        basket.addItemsToBasket(milk);
+        basket.addItemsToBasket(milk);
+        assertEquals(0, bogof.applyDiscount(basket.getItems()), 0.01);
     }
 }
