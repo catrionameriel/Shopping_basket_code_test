@@ -51,4 +51,9 @@ public class BasketTest {
         basket.emptyBasket();
         assertEquals(0, basket.countItemsInBasket());
     }
+
+    @Test
+    public void totalStartsAtZero() {
+        assertEquals(0, basket.getTotal(), 0.01);
+    }
 }

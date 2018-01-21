@@ -8,10 +8,12 @@ public class Basket {
 
     private ArrayList<Item> items;
     private ArrayList<IDiscount> discounts;
+    private double total;
 
     public Basket(){
         items = new ArrayList<>();
         discounts = new ArrayList<>();
+        total = 0;
     }
 
     public int countItemsInBasket() {
@@ -28,5 +30,9 @@ public class Basket {
 
     public void emptyBasket() {
         items.clear();
+    }
+
+    public double getTotal() {
+        return total;
     }
 }
