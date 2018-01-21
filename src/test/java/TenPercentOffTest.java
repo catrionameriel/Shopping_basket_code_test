@@ -31,7 +31,7 @@ public class TenPercentOffTest {
     }
 
     @Test
-    public void cannotApplyDiscoutWhenTotalIsNotTwenty() {
+    public void cannotApplyDiscountWhenTotalIsNotTwenty() {
         assertEquals(0, discount.applyDiscount(basket.getItems()), 0.01);
     }
 }

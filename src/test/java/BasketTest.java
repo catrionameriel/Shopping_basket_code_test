@@ -111,21 +111,22 @@ public class BasketTest {
         assertEquals(2.17, basket.getTotalOfDiscount(), 0.01);
         assertEquals(19.58, basket.getTotal(), 0.01);
     }
+//    CAN APPLY ONE DISCOUNT BUT NEED TO WORK OUT HOW TO DO MORE AND IN ORDER!!!!
 
-    @Test
-    public void canGetTotalDiscountWithBogofAndTenPercent() {
-        basket.addDiscount(bogof);
-        basket.addDiscount(tenPercentOff);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(brie);
-        basket.addItemsToBasket(milk);
-//        assertEquals(24.5, basket.getTotalOfDiscount(), 0.01);
+//    @Test
+//    public void canGetTotalDiscountWithBogofAndTenPercent() {
+//        basket.addDiscount(bogof);
+//        basket.addDiscount(tenPercentOff);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(brie);
+//        basket.addItemsToBasket(milk);
+//       assertEquals(24.5, basket.getTotalOfDiscount(), 0.01);
 //        assertEquals(19.58, basket.getTotal(), 0.01);
-    }
+//    }
 
     @Test
     public void canGetLoyaltyCard() {
@@ -139,7 +140,7 @@ public class BasketTest {
     }
 
     @Test
-    public void canGetTotalDiscountWithLoyaltycard() {
+    public void canGetTotalDiscountWithLoyaltyCard() {
         basket.addItemsToBasket(brie);
         basket.addItemsToBasket(milk);
         basket.addLoyaltyCard();
