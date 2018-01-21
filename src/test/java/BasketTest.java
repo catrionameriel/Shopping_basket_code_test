@@ -15,10 +15,10 @@ public class BasketTest {
 
     @Before
     public void before() {
-       basket = new Basket();
-       brie = new Brie("Brie", 7.25);
-       milk = new Milk("Milk", 0.80);
-       bogof = new BogofDiscount(milk);
+        basket = new Basket();
+        brie = new Brie("Brie", 7.25);
+        milk = new Milk("Milk", 0.80);
+        bogof = new BogofDiscount(milk);
     }
 
     @Test
@@ -75,7 +75,7 @@ public class BasketTest {
     }
 
     @Test
-    public void canAddDiscount(){
+    public void canAddDiscount() {
         basket.addDiscount(bogof);
         assertEquals(1, basket.getNumberOfDiscounts());
     }
@@ -90,11 +90,12 @@ public class BasketTest {
     }
 
     @Test
-    public void canGetFinalTotal() {
+    public void canGetFinalTotalWithBogof() {
         basket.addDiscount(bogof);
         basket.addItemsToBasket(milk);
         basket.addItemsToBasket(brie);
         basket.addItemsToBasket(milk);
         assertEquals(8.05, basket.getTotal(), 0.01);
     }
+
 }
