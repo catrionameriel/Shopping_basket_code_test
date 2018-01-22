@@ -113,20 +113,19 @@ public class BasketTest {
     }
 //    CAN APPLY ONE DISCOUNT BUT NEED TO WORK OUT HOW TO DO MORE AND IN ORDER!!!!
 
-//    @Test
-//    public void canGetTotalDiscountWithBogofAndTenPercent() {
-//        basket.addDiscount(bogof);
-//        basket.addDiscount(tenPercentOff);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(brie);
-//        basket.addItemsToBasket(milk);
-//       assertEquals(24.5, basket.getTotalOfDiscount(), 0.01);
-//        assertEquals(19.58, basket.getTotal(), 0.01);
-//    }
+    @Test
+    public void canGetTotalDiscountWithBogofAndTenPercent() {
+        Brie brie2 = new Brie("Brie", 10.00);
+        BogofDiscount bogof2 = new BogofDiscount(brie2);
+        basket.addDiscount(bogof2);
+        basket.addDiscount(tenPercentOff);
+        basket.addItemsToBasket(brie2);
+        basket.addItemsToBasket(brie2);
+        basket.addItemsToBasket(brie2);
+        basket.addItemsToBasket(brie2);
+        basket.addItemsToBasket(brie2);
+        assertEquals(27.00, basket.getTotal(), 0.01);
+    }
 
     @Test
     public void canGetLoyaltyCard() {
